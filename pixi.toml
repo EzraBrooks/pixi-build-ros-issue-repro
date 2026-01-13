@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Ezra Brooks <ezra@brooks.cx>"]
+channels = ["conda-forge", "robostack-humble"]
+name = "pixi-build-ros-issue-repro"
+platforms = ["osx-arm64", "linux-64"]
+version = "0.1.0"
+preview = ["pixi-build"]
+
+[dev]
+ros-humble-ros-pkg-1 = { path = "./ros-pkg-1/package.xml"}
+ros-humble-ros-pkg-2 = { path = "./ros-pkg-2/package.xml"}
+
+[tasks]
+
+[dependencies]
